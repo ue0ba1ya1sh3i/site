@@ -1,17 +1,34 @@
 {
-  "name": "site",
+  "name": "connect",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "license": "MIT",
+  "description": "This is a simple, secure site.",
+  "keywords": [
+    "react",
+    "site",
+    "introduce",
+    "firebase",
+    "google",
+    "simple",
+    "node-js",
+    "vite",
+    "typescript",
+    "secure"
+  ],
+  "author": "Arata Uebayashi",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "preview": "vite preview --host",
+    "build": "tsc --noEmit && vite build",
+    "hosting": "firebase deploy --only hosting"
   },
   "dependencies": {
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.8.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
